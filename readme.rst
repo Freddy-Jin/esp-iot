@@ -1,8 +1,6 @@
 ESP32 IoT Solution Overview
 ===========================
 
---------------
-
 Solutions
 ---------
 
@@ -32,8 +30,6 @@ Solutions
    -  [ESP32 secure and encrypt]
    -  [Download Tool GUI Instruction]
 
---------------
-
 Evaluation Board Series
 -----------------------
 
@@ -50,8 +46,6 @@ Evaluation Board Series
    `[中文] <./documents/evaluation_boards/readme_cn.md>`__
 
    -  Firmware download and JTAG debug tool.
-
---------------
 
 ESP32 IoT Example List:
 -----------------------
@@ -274,8 +268,6 @@ Build system and dependency
    project, which alos means, you need to enable the components you
    would like to use.
 
---------------
-
 Framework
 ---------
 
@@ -324,8 +316,6 @@ Framework
        └── tools
            └── unit-test-app
 
---------------
-
 Usage
 -----
 
@@ -359,8 +349,6 @@ Usage
 -  To flash and monitor output in one pass, you can run:
    ``make flash monitor``
 -  You can use unit-test in esp-iot-solution to test all the components.
-
---------------
 
 ##
 
@@ -418,8 +406,6 @@ To use uint-test, follow these steps:
 -  You need to send the index of the unit you want to test by uart. Test
    code of the unit you select will be run
 
---------------
-
 ##
 
 .. raw:: html
@@ -456,8 +442,6 @@ To run the Examples projects, follow the steps below:
 -  Run ``make`` to compile the project, or ``make flash`` to compile and
    flash the module.
 
---------------
-
 ##
 
 .. raw:: html
@@ -485,6 +469,3 @@ Empty project
    ::
 
            export IOT_SOLUTION_PATH = "YOUR_PATH/esp-iot-solution"
-
---------------
-
