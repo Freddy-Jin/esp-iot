@@ -1,0 +1,61 @@
+menu "IoT unit-test settings"
+    menu "WiFi config"
+        config AP_SSID
+            string "Enter SSID of router to connect to"
+            default ""
+            help
+                "Enter SSID of router to connect to"
+
+        config AP_PASSWORD
+            string "Enter PASSWORD of router to connect to"
+            default ""
+            help
+                "Enter PASSWORD of router to connect to"
+    endmenu
+    
+    menu "MQTT testcase"
+        config MQTT_BROKER_ADDR
+            string "Enter MQTT broker address"
+            default "192.168.1.1"
+            help
+                "Enter the address of MQTT broker"
+    endmenu       
+
+    menu "TCP testcase"
+        config TCP_SERVER_MAX_CONNECTION
+            int "Set max connection number for TCP server"
+            default 10
+            help
+                "Set max connection number for TCP server"
+        config TCP_SERVER_PORT
+            int "Set listening port for TCP server"
+            default 8002
+            help
+                "Set listening port for TCP server"
+    endmenu
+
+    menu "TouchTFT Pin Configuration"
+        config UT_LCD_MISO_GPIO
+            int "UT_LCD_MISO_GPIO"
+            default "25"
+        config UT_LCD_MOSI_GPIO
+            int "UT_LCD_MOSI_GPIO"
+            default "23"
+        config UT_LCD_CLK_GPIO
+            int "UT_LCD_CLK_GPIO"
+            default "19"
+        config UT_LCD_CS_GPIO
+            int "UT_LCD_CS_GPIO"
+            default "22"
+        config UT_LCD_DC_GPIO
+            int "UT_LCD_DC_GPIO"
+            default "21"
+        config UT_LCD_RESET_GPIO
+            int "UT_LCD_RESET_GPIO"
+            default "18"
+        config UT_LCD_BL_GPIO
+            int "UT_LCD_BL_GPIO"
+            default "5"
+    endmenu
+
+endmenu
